@@ -1,0 +1,52 @@
+.icon-share_qz, .icon-share_sina, .icon-share_wx {
+  background-image: url(../img/sprite.png);
+  background-position: -85px 0;
+  width: 80px;
+  height: 80px; }
+
+.icon-share_sina, .icon-share_wx {
+  background-position: 0 0;
+  height: 81px; }
+
+.icon-share_wx {
+  background-position: -170px 0;
+  height: 80px; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 50;
+  filter: alpha(opacity=5000);
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 30px; }
+
+.box {
+  width: 300px;
+  height: 300px;
+  background: url("../img/b.jpg") 0 0 no-repeat;
+  font-size: 44px;
+  color: #00b3ee; }
+
+.div {
+  font-size: 12px;
+  width: 200px;
+  height: 300px;
+  background: url("../img/arrow-r.png") 0 0 no-repeat; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  /* IE9*/
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*# sourceMappingURL=maps/main.css.map */

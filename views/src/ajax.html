@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %></title>
+</head>
+<body>
+<p id="p1"></p>
+<div id="content"></div>
+
+<script id="topicsList" type="text/html">
+  <ul>
+    [[each data as item i]]
+    <li><a href="">[[item.title]]</a>-<span>[[item.create_at | dateFormat:'yyyy.MM.dd hh:mm:ss']]</span></li>
+    [[/each]]
+  </ul>
+</script>
+
+<script src="js/lib/seajs/seajs/3.0.0/sea.js"></script>
+<script src="js/sea.config.js"></script>
+<script>
+  seajs.use("page/ajax",function (ajax) {
+    ajax.init();
+  });
+</script>
+</body>
+</html>

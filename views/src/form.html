@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <link rel="stylesheet" href="js/lib/artDialog/css/ui-dialog.css">
+  <style>
+    .popup{display: none;}
+    .my-popup{border: none;}
+    #txt{
+      width:300px;
+      height:100px;
+      border:1px solid red;
+    }
+  </style>
+</head>
+<body>
+<form id="form">
+  <table>
+    <tr><td>用户名：<input type="text" name="username"></td></tr>
+    <tr><td>电话：<input type="text" name="phone"></td></tr>
+    <tr><td>密码：<input type="password" name="password"></td></tr>
+    <tr><td>地址：<input type="text" name="address"></td></tr>
+    <tr><td>邮箱：<input type="email" name="email"></td></tr>
+    <tr><td>性别：<label><input type="radio" name="sex" value="男">男</label><label><input type="radio" name="sex" value="女">女</label></td></tr>
+    <tr><td>爱好：<label><input type="checkbox" name="love" value="v唱歌">唱歌</label><label><input type="checkbox" name="love" value="v跳舞">跳舞</label></td></tr>
+    <tr><td>年龄：
+      <select name="age">
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+      </select>
+    </td></tr>
+    <tr><td><input type="button" value="提交" id="btn-submit"></td></tr>
+  </table>
+</form>
+
+<div id="bubble" class="bubble">气泡浮层</div>
+
+<div id="gusbooks">
+  <span>请输入140字的内容</span>
+  <!--字符个数提示框-->
+  <span id="charlength"></span>
+  <br/>
+  <!--构建一个字符统计的文本框-->
+  <textarea name="txt" cols="60" rows="10" class="countchars"></textarea>
+</div>
+<textarea rows="1" name="s1" cols="27" id="autoRow" style="padding: 0;line-height: 1.5;border: 1px solid #eb8f00;"></textarea>
+</body>
+</html>
+
+
+<div class="popup" id="popup">
+  <div class="popup-title">标题</div>
+  <div class="popup-content">内容</div>
+  <div class="popup-button"><input type="button" value="取消" id="btn-cancel-add"><input id="btn-ok-add" type="button" value="确定"></div>
+</div>
+<script src="js/lib/seajs/seajs/3.0.0/sea.js"></script>
+<script src="js/sea.config.js"></script>
+<script>
+  seajs.use("page/form");
+</script>
+</body>
+</html>

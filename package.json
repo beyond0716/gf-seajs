@@ -1,0 +1,21 @@
+{
+  "name": "pro-seajs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev":"cross-env NODE_ENV=development nodemon ./bin/www",
+    "pro": "cross-env NODE_ENV=production nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "config": "^1.26.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "^2.5.6",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {}
+}
